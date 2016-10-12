@@ -69,13 +69,11 @@ namespace CoordinateConverter
             int zoom = int.Parse(ZoomLevelTextBox.Text);
             Point p = convert.LatLngToTileXYGeneric(lat, lng, zoom);
             Point pt = convert.LatLngToTileXYTecent(lat, lng, zoom);
-            Point pb = convert.LatLngToTileXYBaidu(lat, lng, zoom);
+            Point pb = convert.LatLngToTileXYBaiduParameter(lat, lng, zoom);
 
             string googleuri = "http://mt2.google.cn/vt/lyrs=m@258000000&hl=zh-CN&gl=CN&src=app&x={0}&y={1}&z={2}&s=Ga";
             string tecenturi = "http://p3.map.gtimg.com/maptilesv2/{0}/{1}/{2}/{3}_{4}.png?version=20130701";
             string baiduuri = "http://online1.map.bdimg.com/tile/?qt=tile&styles=pl&x={0}&y={1}&z={2}";
-
-
 
             GoolgeTileResultTextBox.Text = string.Format(googleuri,p.X,p.Y,zoom);
             TecentTileResultTextBox.Text = string.Format(tecenturi, zoom, Math.Floor(pt.X / 16.0), Math.Floor(pt.Y / 16.0), pt.X, pt.Y);
