@@ -1,11 +1,15 @@
 #坐标转换
 ---
 包含两个内容
+
 1. WGS84、GCJ02、BD09相互转换
 2. 将经纬度转换为瓦片坐标
+
 ---
 ##参考资料
+
 1. github资源
+
 - [coordtransform](https://github.com/wandergis/coordtransform)
 - [tile-lnglat-transform](https://github.com/CntChen/tile-lnglat-transform)
 - [JZLocationConverter-for-Android](https://github.com/taoweiji/JZLocationConverter-for-Android)
@@ -14,8 +18,10 @@
 - [BruTile](https://github.com/BruTile/BruTile)
 - [ArcBruTile](https://github.com/ArcBruTile/ArcBruTile)
 - [tilefetcher](https://github.com/novawei/tilefetcher)
+
 2. blog
-- [](http://www.cnblogs.com/kekec/p/3159970.html)
+
+- [http://www.cnblogs.com/kekec/p/3159970.html]()
 - [](http://rovertang.com/category/map/mapapi/)
 - [](http://blog.sina.com.cn/s/blog_538036cf0100pxbl.html)
 - [](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames)
