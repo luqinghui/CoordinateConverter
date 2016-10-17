@@ -250,7 +250,6 @@ namespace CoordinateConverter
         }
 
         private int[] convert_px_to_tile(double x, double y)
-
         {
             int t_x = (int)(Math.Floor(x / 256.0));
             int t_y = (int)(Math.Floor(y / 256.0));
